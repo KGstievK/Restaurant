@@ -7,6 +7,7 @@ import { FC } from 'react'
 interface LayoutProps {
   children: React.ReactNode
 }
+
 const LayoutSide: FC<LayoutProps> = ({children}) => {
   return (
     <div className={scss.LayoutSide}>

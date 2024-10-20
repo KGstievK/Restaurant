@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import scss from "./firstSection.module.scss";
 import Image from "next/image";
@@ -6,10 +7,16 @@ import rightIcon from "@/images/rightIcon.png";
 import { FaArrowRight } from "react-icons/fa6";
 import location from "@/images/location.png";
 import phone from "@/images/phone.png";
+import { League_Spartan } from "next/font/google";
+
+const spartan = League_Spartan({
+  subsets: ["latin"],
+  weight: "400", // Укажите нужный вес (например, 400)
+});
 
 const Delicious = () => {
   return (
-    <section className={scss.FirstSection}>
+    <section className={`${scss.FirstSection}`}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.mainBlock}>

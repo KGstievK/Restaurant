@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Slik';
+  src: url('/src/app/fonts/slick.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
 .BestSellers {
   width: 100%;
   background-color: #1b2026;
@@ -14,7 +20,8 @@
       gap: 10px;
 
       h3 {
-        font-family: Shalimar;
+        font-family: "Shalimar";
+        font-style: italic;
         font-size: 40px;
         font-weight: 400;
         line-height: 48.8px;
@@ -38,15 +45,14 @@
         gap: 20px;
 
         h1 {
-          font-family: Silk Serif;
+          font-family: "Silk",;
           font-size: 40px;
-          font-weight: 600;
+          font-weight: 400;
           line-height: 61.36px;
           width: 320px;
         }
 
         p {
-          font-family: Spartan;
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
