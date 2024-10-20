@@ -2,9 +2,7 @@ import React from "react";
 import scss from "./bestSellers.module.scss";
 import leftIcon from "@/images/leftIcon.png";
 import Image from "next/image";
-import first_photo from "@/images/third_section_1.png";
-import second_photo from "@/images/third_section_2.png";
-import arrow from "@/images/third_section_arrow.png";
+import ImageSwiper from "./swaiper/ImageSwiper";
 
 const BestSellers = () => {
   return (
@@ -25,9 +23,7 @@ const BestSellers = () => {
               </p>
             </div>
             <div className={scss.images}>
-              <Image src={first_photo} alt="photo" width={266} height={281} />
-              <Image src={second_photo} alt="photo" width={266} height={281} />
-              <Image src={arrow} alt="photo" width={23} height={40} />
+              <ImageSwiper />
             </div>
           </div>
         </div>

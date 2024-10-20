@@ -11,7 +11,7 @@ const About = () => {
       <div className="container">
         <div className={scss.content}>
           <div className={scss.hero}>
-            <Image src={leftIcon} alt="photo" width={50} height={14} />
+            <Image src={leftIcon}  alt="photo" width={50} height={14} />
             <h1>About Us</h1>
           </div>
 
