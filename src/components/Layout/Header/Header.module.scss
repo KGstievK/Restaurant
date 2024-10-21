@@ -1,14 +1,89 @@
-.Header {
-  padding-block: 14px;
-  .content {
+$background-color: #fff;
+$text-color: #333;
+$accent-color: #ff6f61;
+$button-bg-color: $accent-color;
+$button-hover-color: darken($accent-color, 10%);
+$transition-time: 0.3s ease;
+$input-border-color: lighten($accent-color, 30%);
+$input-placeholder-color: #999;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #1b2026;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+.container{
+  width: 78%;
+  margin: 0 auto;
+}
+.headerBlock{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  h1 {
+    width: 142px;
+    height: 43px;
+    top: 18px;
+    left: 56px;
+    gap: 0px;
+    opacity: 0px;
+    
+  }
+
+  .header-a {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    gap: 25px;
+
+    a {
+      width: 64px;
+      height: 18px;
+      gap: 0px;
+      opacity: 0px;
       
+
+    
+    }
+  }
+
+  .header-button {
+      input {
+        padding: 8px 10px;
+        background-color: #EF272C;
+        border: 2px solid $input-border-color;
+        border-radius: 4px;
+        border: none;
+        transition: border-color $transition-time;
+
+        &::placeholder {
+          color:#ffff ;
+        }
+
+        &:focus {
+          border-color: $accent-color;
+          outline: none;
+          box-shadow: 0 0 5px rgba($accent-color, 0.5); // Легкая тень при фокусе
+        }
+      }
+
+      .fa-search {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $input-placeholder-color;
+        font-size: 16px; // Увеличим размер иконки
+      }
+    
+  }
+
+  .header-en {
+    a {
+      font-size: 14px;
+
     }
   }
 }
