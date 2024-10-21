@@ -1,9 +1,78 @@
-.Footer {
-  .content {
-   width: 100%;
-   margin: 60px 0;
-   display: flex;
-   flex-direction: column;
-    
+$background-color: #1b2026;
+$text-color: #fff;
+$accent-color: #d4a373;
+$line-color: rgba(255, 255, 255, 0.2);
+
+.footer {
+  padding: 50px 0;
+  color: $text-color;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footerBlock {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-family: 'Silk Serif', serif;
+      font-size: 28px;
+      color: $accent-color;
+      margin-bottom: 20px;
+    }
+
+    .footer-a {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 20px;
+
+      a {
+        font-size: 16px;
+        color: $text-color;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    .Footer-icon {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      width: 120px;
+
+      svg {
+        font-size: 24px;
+        color: $text-color;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $line-color;
+    margin: 20px 0;
+  }
+
+  .footer-footer {
+    h5 {
+      font-size: 14px;
+      color: $text-color;
+      margin: 10px 0;
+    }
   }
 }
