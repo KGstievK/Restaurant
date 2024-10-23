@@ -1,13 +1,13 @@
 import React from "react";
 import scss from "./interior.module.scss";
 import Image from "next/image";
-import interior1 from "@/images/interior1.png";
-import interior2 from "@/images/interior2.png";
-import interior3 from "@/images/interior3.png";
-import interior4 from "@/images/interior4.png";
-import interior5 from "@/images/interior5.png";
-import leftIcon from "@/images/leftIcon.png";
-import rightIcon from "@/images/rightIcon.png";
+import interior1 from "@/assets/images/interior1.png";
+import interior2 from "@/assets/images/interior2.png";
+import interior3 from "@/assets/images/interior3.png";
+import interior4 from "@/assets/images/interior4.png";
+import interior5 from "@/assets/images/interior5.png";
+import leftIcon from "@/assets/images/leftIcon.png";
+import rightIcon from "@/assets/images/rightIcon.png";
 
 const Interior = () => {
   return (
