@@ -16,10 +16,9 @@ function ImageSwiper() {
     null
   );
 
-  // Функция для перехода на следующий слайд
   const handleNextSlide = () => {
     if (swiperInstance) {
-      swiperInstance.slideNext(); // Переход к следующему слайду
+      swiperInstance.slideNext();
     }
   };
 
@@ -27,11 +26,11 @@ function ImageSwiper() {
     <div className={scss.content}>
       <div className={scss.swiperContainer}>
         <Swiper
-          modules={[Scrollbar, A11y]} // Убираем Pagination из модулей
-          spaceBetween={15} // Расстояние между слайдами
-          slidesPerView={2} // Отображаем по одному слайду
-          onSwiper={(swiper) => setSwiperInstance(swiper)} // Сохраняем экземпляр Swiper
-          onSlideChange={() => console.log("slide change")} // Лог смены слайда
+          modules={[Scrollbar, A11y]}
+          spaceBetween={15}
+          slidesPerView={2}
+          onSwiper={(swiper) => setSwiperInstance(swiper)}
+          onSlideChange={() => console.log("slide change")}
           style={{ maxWidth: "600px", width: "100%", margin: "0 auto" }}
           className={scss.mySwiper}
         >
@@ -52,7 +51,6 @@ function ImageSwiper() {
           </SwiperSlide>
         </Swiper>
       </div>
-
       <div className={scss.btn} onClick={handleNextSlide}>
         <Image src={arrow} alt="Next slide" width={23} height={40} />
       </div>
