@@ -1,22 +1,24 @@
 @font-face {
-  font-family: 'Slik';
-  src: url('/src/app/fonts/slick.ttf');
+  font-family: "Slik";
+  src: url("/src/app/fonts/slick.ttf");
   font-weight: 300;
   font-style: normal;
 }
+
 .BestSellers {
   width: 100%;
   background-color: #1b2026;
   padding: 90px 0;
+
   .content {
     display: flex;
     align-items: start;
     justify-content: start;
     flex-direction: column;
+
     .hero {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 10px;
 
       h3 {
@@ -31,65 +33,111 @@
     .block {
       width: 100%;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 10px;
 
       .text {
         display: flex;
-        align-items: start;
-        justify-content: start;
         flex-direction: column;
         gap: 20px;
 
         h1 {
-          font-family: "Silk",;
+          font-family: "Slik";
           font-size: 40px;
           font-weight: 400;
           line-height: 61.36px;
-          width: 320px;
+          max-width: 320px;
         }
 
         p {
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
-          width: 440px;
+          max-width: 440px;
         }
       }
-      .images {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        // overflow-x: scroll;
 
-        img {
-          border-radius: 4px;
+      .images {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 70px 0;
+
+    .content {
+      .hero {
+        h3 {
+          font-size: 32px;
+        }
+      }
+
+      .block {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        .text {
+          h1 {
+            font-size: 36px;
+            width: 100%;
+          }
+
+          p {
+            font-size: 14px;
+            width: 100%;
+          }
         }
       }
     }
   }
-}
 
-@media (max-width: 768px) {
-  .BestSellers {
+  @media (max-width: 768px) {
+    padding: 50px 0;
+
     .content {
+      .hero {
+        h3 {
+          font-size: 28px;
+        }
+      }
+
       .block {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        gap: 10px;
-        flex-direction: column;
         .text {
           h1 {
-            font-size: 40px;
-            width: 320px;
+            font-size: 30px;
           }
 
           p {
-            font-size: 16px;
-            width: 400px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0;
+
+    .content {
+      .hero {
+        h3 {
+          font-size: 24px;
+        }
+      }
+
+      .block {
+        .text {
+          h1 {
+            font-size: 26px;
+            width: 100%;
+          }
+
+          p {
+            font-size: 12px;
+            width: 100%;
           }
         }
       }

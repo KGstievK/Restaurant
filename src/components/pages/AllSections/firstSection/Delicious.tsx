@@ -1,5 +1,4 @@
-"use client"
-import React from "react";
+"use client";
 import scss from "./firstSection.module.scss";
 import Image from "next/image";
 import leftIcon from "@/images/leftIcon.png";
@@ -11,12 +10,12 @@ import { League_Spartan } from "next/font/google";
 
 const spartan = League_Spartan({
   subsets: ["latin"],
-  weight: "400", // Укажите нужный вес (например, 400)
+  weight: "400",
 });
 
 const Delicious = () => {
   return (
-    <section className={`${scss.FirstSection}`}>
+    <section className={scss.FirstSection}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.mainBlock}>
