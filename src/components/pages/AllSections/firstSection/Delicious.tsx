@@ -16,7 +16,7 @@ const spartan = League_Spartan({
 
 const Delicious = () => {
   return (
-    <section className={`${scss.FirstSection}`}>
+    <section className={scss.FirstSection}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.mainBlock}>

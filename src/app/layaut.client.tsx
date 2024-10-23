@@ -16,9 +16,9 @@ const leagueSpartan = League_Spartan({
 const LayoutClient: FC<LayoutClientType> = ({children}) => {
   return (
     <div>
-     <ReduxProvider>
-			<LayoutSide>{children}</LayoutSide>
-		</ReduxProvider>
+      <ReduxProvider>
+			  <LayoutSide>{children}</LayoutSide>
+		  </ReduxProvider>
     </div>
   )
 }

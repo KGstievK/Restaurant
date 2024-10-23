@@ -1,4 +1,3 @@
-import React from "react";
 import scss from "./bestSellers.module.scss";
 import leftIcon from "@/images/leftIcon.png";
 import Image from "next/image";

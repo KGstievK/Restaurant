@@ -6,21 +6,15 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Spartan";
   src: url("/src/app/fonts/Spartan.ttf");
   font-weight: 400;
   font-style: normal;
 }
 .FirstSection {
-  // min-height: 90vh;
-  background-image: linear-gradient(
-      180deg,
-      rgba(27, 32, 38, 0.4) 46.81%,
-      rgba(27, 32, 38, 0.8) 100.67%
-    ),
-    url("../../../../images/fisrt_section.png");
-  background-size: cover;
-  background-position: center;
-
+  width: 100%;
+  height: 686px;
+  background: url('/src/assets/images/fisrt_section.png') no-repeat center / cover;
   .content {
     display: flex;
     align-items: center;
