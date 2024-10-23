@@ -1,9 +1,9 @@
 import React from "react";
 import scss from "./about.module.scss";
 import Image from "next/image";
-import leftIcon from "@/images/leftIcon.png";
-import chef from "@/images/second_section_chef.png";
-import food from "@/images/second_section_food.png";
+import leftIcon from "@/assets/images/leftIcon.png";
+import chef from "@/assets/images/second_section_chef.png";
+import food from "@/assets/images/second_section_food.png";
 
 const About = () => {
   return (

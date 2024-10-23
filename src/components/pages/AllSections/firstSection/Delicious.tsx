@@ -1,11 +1,11 @@
 "use client";
 import scss from "./firstSection.module.scss";
 import Image from "next/image";
-import leftIcon from "@/images/leftIcon.png";
-import rightIcon from "@/images/rightIcon.png";
+import leftIcon from "@/assets/images/leftIcon.png";
+import rightIcon from "@/assets/images/rightIcon.png";
 import { FaArrowRight } from "react-icons/fa6";
-import location from "@/images/location.png";
-import phone from "@/images/phone.png";
+import location from "@/assets/images/location.png";
+import phone from "@/assets/images/phone.png";
 import { League_Spartan } from "next/font/google";
 
 const spartan = League_Spartan({

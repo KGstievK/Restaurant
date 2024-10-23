@@ -6,10 +6,10 @@ import { Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import Image from "next/image";
-import first_photo from "@/images/third_section_1.png";
-import second_photo from "@/images/third_section_2.png";
+import first_photo from "@/assets/images/third_section_1.png";
+import second_photo from "@/assets/images/third_section_2.png";
 import scss from "./ImageSwiper.module.scss";
-import arrow from "@/images/third_section_arrow.png";
+import arrow from "@/assets/images/third_section_arrow.png";
 
 function ImageSwiper() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(
