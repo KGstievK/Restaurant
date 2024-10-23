@@ -1,5 +1,5 @@
 import scss from "./bestSellers.module.scss";
-import leftIcon from "@/images/leftIcon.png";
+import leftIcon from "@/assets/images/leftIcon.png";
 import Image from "next/image";
 import ImageSwiper from "./swaiper/ImageSwiper";
 

@@ -2,12 +2,12 @@
 import React from "react";
 import scss from "./visitRestaurant.module.scss";
 import Image from "next/image";
-import leftIcon from "@/images/leftIcon.png";
+import leftIcon from "@/assets/images/leftIcon.png";
 import { FaArrowRight } from "react-icons/fa6";
-import phone from "@/images/contactPhone.png";
-import email from "@/images/email.png";
-import telegram from "@/images/Telegram.png";
-import insta from "@/images/Instagram.png";
+import phone from "@/assets/images/contactPhone.png";
+import email from "@/assets/images/email.png";
+import telegram from "@/assets/images/Telegram.png";
+import insta from "@/assets/images/Instagram.png";
 
 const VisitRestaurant = () => {
   return (
