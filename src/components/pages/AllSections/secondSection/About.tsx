@@ -1,36 +1,72 @@
+<<<<<<< HEAD
+'use client'
+import leftIcon from '@/images/leftIcon.png'
+import chef from '@/images/second_section_chef.png'
+import food from '@/images/second_section_food.png'
+import { motion, useInView } from 'framer-motion'
+import Image from 'next/image'
+import { useRef } from 'react'
+import scss from './about.module.scss'
+=======
 import scss from "./about.module.scss";
 import Image from "next/image";
 import leftIcon from "@/assets/images/leftIcon.png";
 import chef from "@/assets/images/second_section_chef.png";
 import food from "@/assets/images/second_section_food.png";
+>>>>>>> 2814f2d9de884db401fd843c14151d371b69e630
 
 const About = () => {
-  return (
-    <section className={scss.About}>
-      <div className="container">
-        <div className={scss.content}>
-          <div className={scss.hero}>
-            <Image src={leftIcon} alt="photo" width={50} height={14} />
-            <h1>About Us</h1>
-          </div>
+	const ref = useRef(null)
+	const inInView = useInView(ref, { once: true })
 
-          <div className={scss.block}>
-            <h1>A Journey Throught Cafesio Flavors</h1>
-            <p>
-              Try dishes that will open up new tastes for you and delight your
-              eyes with their appearance. Here you will find a cozy atmosphere,
-              excellent service and attention to each guest. Book a table now
-              and enjoy a unique experience of taste discovery!
-            </p>
-          </div>
-          <div className={scss.images}>
-            <Image src={chef} alt="photo" width={520} height={300} />
-            <Image src={food} alt="photo" width={520} height={300} />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+	return (
+		<section id='about' className={scss.About}>
+			<div className='container'>
+				<div className={scss.content}>
+					<motion.div
+						initial={{ opacity: 0, x: -50 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+						className={scss.hero}
+					>
+						<Image src={leftIcon} alt='photo' width={50} height={14} />
+						<h1>About Us</h1>
+					</motion.div>
+					<div className={scss.block}>
+						<motion.h1
+							ref={ref}
+							initial={{ opacity: 0, x: -50 }}
+							animate={inInView ? { opacity: 1, x: 0 } : {}}
+							transition={{ duration: 1 }}
+						>
+							A Journey Through Cafesio Flavors
+						</motion.h1>
+						<motion.p
+							ref={ref}
+							initial={{ opacity: 0, x: 50 }}
+							animate={inInView ? { opacity: 1, x: 0 } : {}}
+							transition={{ duration: 1 }}
+						>
+							Try dishes that will open up new tastes for you and delight your
+							eyes with their appearance. Here you will find a cozy atmosphere,
+							excellent service and attention to each guest. Book a table now
+							and enjoy a unique experience of taste discovery!
+						</motion.p>
+					</div>
+					<motion.div
+						ref={ref}
+						initial={{ opacity: 0, y: 50 }}
+						animate={inInView ? { opacity: 1, y: 0 } : {}}
+						transition={{ duration: 1 }}
+						className={scss.images}
+					>
+						<Image src={chef} alt='photo' width={520} height={300} />
+						<Image src={food} alt='photo' width={520} height={300} />
+					</motion.div>
+				</div>
+			</div>
+		</section>
+	)
+}
 
-export default About;
+export default About
