@@ -1,5 +1,4 @@
-"use client"
-import React from "react";
+"use client";
 import scss from "./firstSection.module.scss";
 import Image from "next/image";
 import leftIcon from "@/assets/images/leftIcon.png";

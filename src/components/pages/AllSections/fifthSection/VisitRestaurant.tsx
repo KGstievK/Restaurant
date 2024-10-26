@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import scss from "./visitRestaurant.module.scss";
 import Image from "next/image";
@@ -22,10 +22,10 @@ const VisitRestaurant = () => {
             <div className={scss.block}>
               <h1>Join Us for Happy Hours</h1>
               <h5>Your neighborhood</h5>
-              <h4>225$.Lake Ave.Suite 1150 Pasadena,CA 911101</h4>
+              <h4>225$.Lake Ave.Suite 1150 Pasadena ,CA 911101</h4>
               <h5>Opening hours:</h5>
               <h4>Mon-Thu: 10:00 am - 01:00 am</h4>
-              <h4>Fri-Sun: 10:00 am - 02:00 am</h4>
+              <h4>Fri-Sun: 10 :00 am - 02:00 am</h4>
               <div className={scss.btn}>
                 <hr />
                 <button>
@@ -52,7 +52,7 @@ const VisitRestaurant = () => {
               </div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.1895779111883!2d74.610874575615!3d42.8899468014613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7ed7cb24803%3A0xe1c77d12212757b7!2zMTM4INGD0LsuINCa0YPRgNC10L3QutC10LXQstCwLCDQkdC40YjQutC10Lo!5e0!3m2!1sru!2skg!4v1729327960851!5m2!1sru!2skg"
-                width="500"
+                width="95%"
                 height="450"
                 style={{ border: 0 }}
                 loading="lazy"

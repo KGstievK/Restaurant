@@ -6,8 +6,12 @@ import { Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import Image from "next/image";
-import first_photo from "@/assets/images/third_section_1.png";
-import second_photo from "@/assets/images/third_section_2.png";
+import one from "@/assets/images/third_section_1.png";
+import two from "@/assets/images/third_section_2.png";
+import three from "@/assets/images/swiper3.png";
+import four from "@/assets/images/swiper4.png";
+import five from "@/assets/images/swiper5.png";
+import six from "@/assets/images/swiper6.png";
 import scss from "./ImageSwiper.module.scss";
 import arrow from "@/assets/images/third_section_arrow.png";
 
@@ -16,10 +20,9 @@ function ImageSwiper() {
     null
   );
 
-  // Функция для перехода на следующий слайд
   const handleNextSlide = () => {
     if (swiperInstance) {
-      swiperInstance.slideNext(); // Переход к следующему слайду
+      swiperInstance.slideNext();
     }
   };
 
@@ -27,32 +30,34 @@ function ImageSwiper() {
     <div className={scss.content}>
       <div className={scss.swiperContainer}>
         <Swiper
-          modules={[Scrollbar, A11y]} // Убираем Pagination из модулей
-          spaceBetween={15} // Расстояние между слайдами
-          slidesPerView={2} // Отображаем по одному слайду
-          onSwiper={(swiper) => setSwiperInstance(swiper)} // Сохраняем экземпляр Swiper
-          onSlideChange={() => console.log("slide change")} // Лог смены слайда
+          modules={[Scrollbar, A11y]}
+          spaceBetween={15}
+          slidesPerView={2}
+          onSwiper={(swiper) => setSwiperInstance(swiper)}
+          onSlideChange={() => console.log("slide change")}
           style={{ maxWidth: "600px", width: "100%", margin: "0 auto" }}
           className={scss.mySwiper}
         >
           <SwiperSlide>
-            <Image src={first_photo} alt="Dish 1" width={266} height={281} />
+            <Image src={one} alt="Dish 1" width={266} height={281} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={two} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={three} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={four} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={five} alt="Dish 2" width={266} height={280} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src={six} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
         </Swiper>
       </div>
-
       <div className={scss.btn} onClick={handleNextSlide}>
         <Image src={arrow} alt="Next slide" width={23} height={40} />
       </div>
