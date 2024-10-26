@@ -6,8 +6,12 @@ import { Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import Image from "next/image";
-import first_photo from "@/assets/images/third_section_1.png";
-import second_photo from "@/assets/images/third_section_2.png";
+import one from "@/assets/images/third_section_1.png";
+import two from "@/assets/images/third_section_2.png";
+import three from "@/assets/images/swiper3.png";
+import four from "@/assets/images/swiper4.png";
+import five from "@/assets/images/swiper5.png";
+import six from "@/assets/images/swiper6.png";
 import scss from "./ImageSwiper.module.scss";
 import arrow from "@/assets/images/third_section_arrow.png";
 
@@ -35,19 +39,22 @@ function ImageSwiper() {
           className={scss.mySwiper}
         >
           <SwiperSlide>
-            <Image src={first_photo} alt="Dish 1" width={266} height={281} />
+            <Image src={one} alt="Dish 1" width={266} height={281} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={two} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={three} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={four} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={second_photo} alt="Dish 2" width={266} height={280} />
+            <Image src={five} alt="Dish 2" width={266} height={280} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src={six} alt="Dish 2" width={266} height={280} />
           </SwiperSlide>
         </Swiper>
       </div>
