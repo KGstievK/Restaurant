@@ -16,10 +16,10 @@ const geistMono = localFont({
 })
 
 const spartan = localFont({
-  src: "./fonts/Spartan.woff",
-  variable: "--font-spartan",
-  weight: "100 600",
-});
+	src: './fonts/Spartan.woff',
+	variable: '--font-spartan',
+	weight: '100 600',
+})
 
 export const metadata: Metadata = {
 	title: 'Restaurant-Amir',
@@ -31,7 +31,6 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode
 }>) {
-<<<<<<< HEAD
 	return (
 		<html lang='en'>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -40,13 +39,4 @@ export default function RootLayout({
 			</body>
 		</html>
 	)
-=======
-  return (
-    <html lang="en">
-      <body>
-        <LayoutClient>{children}</LayoutClient>
-      </body>
-    </html>
-  );
->>>>>>> 2814f2d9de884db401fd843c14151d371b69e630
 }
