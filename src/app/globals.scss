@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Spartan';
+  src: url('./fonts/Spartan.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -5,11 +14,20 @@
 }
 
 body {
+<<<<<<< HEAD
 	padding-top: 60px;
 }
 body::-webkit-scrollbar {
 	display: none; // Для Chrome and Safari
 }
+=======
+  font-family: "Spartan", sans-serif;
+  p {
+    font-family: 'Spartan', sans-serif;
+  }
+}
+
+>>>>>>> 2814f2d9de884db401fd843c14151d371b69e630
 .container {
 	width: 80%;
 	margin: 0 auto;

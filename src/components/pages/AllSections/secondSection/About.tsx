@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 import leftIcon from '@/images/leftIcon.png'
 import chef from '@/images/second_section_chef.png'
@@ -6,6 +7,13 @@ import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'
 import scss from './about.module.scss'
+=======
+import scss from "./about.module.scss";
+import Image from "next/image";
+import leftIcon from "@/assets/images/leftIcon.png";
+import chef from "@/assets/images/second_section_chef.png";
+import food from "@/assets/images/second_section_food.png";
+>>>>>>> 2814f2d9de884db401fd843c14151d371b69e630
 
 const About = () => {
 	const ref = useRef(null)

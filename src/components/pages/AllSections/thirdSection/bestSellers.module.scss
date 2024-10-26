@@ -1,4 +1,12 @@
+@font-face {
+  font-family: "Slik";
+  src: url("/src/app/fonts/slick.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
 .BestSellers {
+<<<<<<< HEAD
 	width: 100%;
 	background-color: #1b2026;
 	padding: 90px 0;
@@ -128,4 +136,143 @@
 			}
 		}
 	}
+=======
+  width: 100%;
+  background-color: #1b2026;
+  padding: 90px 0;
+
+  .content {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      h3 {
+        font-family: "Shalimar";
+        font-style: italic;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48.8px;
+      }
+    }
+
+    .block {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+          font-family: "Slik";
+          font-size: 40px;
+          font-weight: 400;
+          line-height: 61.36px;
+          max-width: 320px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          max-width: 440px;
+        }
+      }
+
+      .images {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 70px 0;
+
+    .content {
+      .hero {
+        h3 {
+          font-size: 32px;
+        }
+      }
+
+      .block {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        .text {
+          h1 {
+            font-size: 36px;
+            width: 100%;
+          }
+
+          p {
+            font-size: 14px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+
+    .content {
+      .hero {
+        h3 {
+          font-size: 28px;
+        }
+      }
+
+      .block {
+        .text {
+          h1 {
+            font-size: 30px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0;
+
+    .content {
+      .hero {
+        h3 {
+          font-size: 24px;
+        }
+      }
+
+      .block {
+        .text {
+          h1 {
+            font-size: 26px;
+            width: 100%;
+          }
+
+          p {
+            font-size: 12px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+>>>>>>> 2814f2d9de884db401fd843c14151d371b69e630
 }

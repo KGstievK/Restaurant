@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 import FormInput from '@/components/ui/ModalWindow/FormInput'
 import Template from '@/components/ui/Template'
@@ -8,6 +9,17 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 import scss from './firstSection.module.scss'
+=======
+"use client";
+import scss from "./firstSection.module.scss";
+import Image from "next/image";
+import leftIcon from "@/assets/images/leftIcon.png";
+import rightIcon from "@/assets/images/rightIcon.png";
+import { FaArrowRight } from "react-icons/fa6";
+import location from "@/assets/images/location.png";
+import phone from "@/assets/images/phone.png";
+import { League_Spartan } from "next/font/google";
+>>>>>>> 2814f2d9de884db401fd843c14151d371b69e630
 
 const Delicious = () => {
 	const [showForm, setShowForm] = useState(false)
